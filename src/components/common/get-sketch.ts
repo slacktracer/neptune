@@ -3,5 +3,5 @@ export const getSketch = async ({ node }: { node: HTMLDivElement }) => {
 
   const sketch = new p5(() => {}, node);
 
-  return sketch;
+  return { p5, sketch };
 };

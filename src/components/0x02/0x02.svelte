@@ -19,5 +19,10 @@
     display: grid;
     height: 100dvh;
     place-content: center;
+
+    #wrapper {
+      line-height: 0;
+      outline: 1px solid #15151c;
+    }
   }
 </style>

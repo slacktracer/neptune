@@ -9,7 +9,7 @@ export const renderPetard: RenderPetard = (
 
   $.fill(petard.colour);
 
-  $.rect(petard.x, petard.y, petard.width, petard.height);
+  $.rect(petard.position.x, petard.position.y, petard.width, petard.height);
 
   $.pop();
 };
