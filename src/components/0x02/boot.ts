@@ -7,9 +7,7 @@ import { updatePetard } from "./petard/update-petard";
 import type { Petard } from "./types/Petard";
 
 export const boot = async ({ node }: { node: HTMLDivElement }) => {
-  const { p5, sketch } = await getSketch({ node });
-
-  const $ = sketch;
+  const $ = getSketch({ node });
 
   let petard: Petard;
 
@@ -23,7 +21,7 @@ export const boot = async ({ node }: { node: HTMLDivElement }) => {
     });
 
     if (insideSquare) {
-      applyForceToBody({ body: petard, force: $.createVector(1, 1), p5 });
+      applyForceToBody({ body: petard, force: $.createVector(0, 1) });
     }
   };
 

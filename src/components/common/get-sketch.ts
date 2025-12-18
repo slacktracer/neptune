@@ -1,7 +1,7 @@
-export const getSketch = async ({ node }: { node: HTMLDivElement }) => {
-  const { default: p5 } = await import("p5");
+import p5 from "p5";
 
+export const getSketch = ({ node }: { node: HTMLDivElement }) => {
   const sketch = new p5(() => {}, node);
 
-  return { p5, sketch };
+  return sketch;
 };
