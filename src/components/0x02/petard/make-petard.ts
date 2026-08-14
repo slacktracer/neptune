@@ -8,7 +8,7 @@ export const makePetard: MakePetard = ({ $, colour, x, y }) => {
     height: 100,
     mass: 1,
     position: $.createVector(x, y),
-    velocity: $.createVector(0, 1),
+    velocity: $.createVector(0, 0),
     width: 100,
   };
 
